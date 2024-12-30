@@ -1,0 +1,4 @@
+.grid{
+    @apply
+    h-12  p-8  bg-blue-500 flex items-center justify-center text-white font-bold rounded
+}

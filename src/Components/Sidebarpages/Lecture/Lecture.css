@@ -1,0 +1,77 @@
+/* General grid styles */
+.timetable-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for time + 6 days */
+    gap: 10px;
+    border: 2px solid #429AC4;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f4f8fc;
+  }
+  
+  /* Header row for time and days */
+  .header-cell {
+    font-weight: bold;
+    text-align: center;
+    background-color: #429AC4;
+    color: white;
+    padding: 10px;
+    border: 1px solid #429AC4;
+    border-radius: 4px;
+  }
+  
+  .time-cell {
+    font-weight: bold;
+    text-align: center;
+    color: #4facfd;
+    padding: 10px;
+    background-color: #d1e7f1;
+    border: 1px solid #429AC4;
+    border-radius: 4px;
+  }
+  
+  .lecture-cell {
+    padding: 10px;
+    border: 1px solid #429AC4;
+    border-radius: 4px;
+  }
+  
+  /* Lecture boxes inside the grid */
+  .lecture-box {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .lecture-box:hover {
+    background-color: #eaf4f9;
+  }
+  
+  /* Accordion expanded style */
+  .lecture-box.expanded {
+    background-color: #d1e7f1;
+  }
+  
+  /* Styling for subject name */
+  .subject-name {
+    font-weight: bold;
+    color: #429AC4;
+  }
+  
+  /* Styling for lecture details when expanded */
+  .lecture-details {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* No lecture placeholder */
+  .no-lecture {
+    color: #888;
+    padding: 10px;
+  }
+  
+ 

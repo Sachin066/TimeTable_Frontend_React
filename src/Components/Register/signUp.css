@@ -1,0 +1,88 @@
+body {
+  /* background-image: url('../../assets/College3.jpeg'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  height: auto;
+  width: 100%;
+  background-size: cover;
+}
+
+.Login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  max-height: max-content;
+  max-width: 100vw;
+  position: relative;
+}
+.Login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.Container {
+  filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.616));
+  max-width: 100vw;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(33, 78%, 91%, 0.555);
+  display: flex;
+  height: 100%;
+  width: 350px;
+  flex-direction: column;
+  outline: none;
+  padding: 50px;
+  margin: 20px;
+  z-index: 1;
+  overflow: auto;
+}
+
+.LoginButton {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  width: 70%;
+  background-color: #6366f1;
+  color: white;
+  margin-left: 35px;
+  margin-top: 55px;
+  border-radius: 5px;
+  border: none;
+}
+.LoginButton:hover {
+  background-color: rgba(63, 63, 190, 0.966);
+}
+
+.ForgotPass {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  text-decoration: none;
+  color: black;
+  margin-top: 20px;
+  font-size: small;
+}
+
+.Noacc {
+  display: flex;
+  margin-top: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-right: 80px;
+  margin-top: 50px;
+}
+
+.Click {
+  color: black;
+  font-weight: bold;
+}
